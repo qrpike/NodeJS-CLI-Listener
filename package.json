@@ -1,0 +1,21 @@
+{
+  "name": "cli-listener",
+  "version": "0.0.1",
+  "description": "Gives your nodejs app a real CLI prompt to play in.",
+  "author": "Quinton Pike <@quinton.pike>",
+  "contributors": [
+    "Quinton Pike <qrpike@gmail.com>"
+  ],
+  "dependencies": {
+    "async": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qrpike/NodeJS-CLI-Listener.git"
+  },
+  "homepage": "https://github.com/qrpike/NodeJS-CLI-Listener.git",
+  "main": "cli.js", 
+  "engines": {
+    "node": ">=0.3.7"
+  }
+}
