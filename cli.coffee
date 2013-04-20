@@ -75,6 +75,19 @@ class CLI extends EventEmitter
 			# when we enter `clear` clear the pages content
 			@clear()
 			@resetInput()
+		@on 'help', =>
+			# List out the possible commands
+			@listTriggers()
+			@resetInput()
+	
+	
+	
+	
+	# List the possible commands they can run:
+	listTriggers: ()=>
+		console.log 'Possible Commands: '
+		for key,value of @triggers
+			console.log '', key
 	
 	
 	

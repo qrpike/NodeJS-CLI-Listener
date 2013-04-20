@@ -1,6 +1,6 @@
 {
   "name": "cli-listener",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gives your nodejs app a real CLI prompt to play in.",
   "author": "Quinton Pike <@quinton.pike>",
   "contributors": [

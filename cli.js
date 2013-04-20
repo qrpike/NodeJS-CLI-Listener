@@ -41,6 +41,9 @@ CLI = (function(_super) {
     this.resetInput = function() {
       return CLI.prototype.resetInput.apply(_this, arguments);
     };
+    this.listTriggers = function() {
+      return CLI.prototype.listTriggers.apply(_this, arguments);
+    };
     this.listenForTriggers = function(triggers) {
       if (triggers == null) {
         triggers = _this.triggers;
@@ -118,10 +121,26 @@ CLI = (function(_super) {
       action = triggers[trigger];
       this.on(trigger, action);
     }
-    return this.on('clear', function() {
+    this.on('clear', function() {
       _this.clear();
       return _this.resetInput();
     });
+    return this.on('help', function() {
+      _this.listTriggers();
+      return _this.resetInput();
+    });
+  };
+
+  CLI.prototype.listTriggers = function() {
+    var key, value, _ref, _results;
+    console.log('Possible Commands: ');
+    _ref = this.triggers;
+    _results = [];
+    for (key in _ref) {
+      value = _ref[key];
+      _results.push(console.log('', key));
+    }
+    return _results;
   };
 
   CLI.prototype.resetInput = function() {
