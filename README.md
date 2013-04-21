@@ -4,6 +4,8 @@ NodeJS-CLI-Listener
 
 CLI listening prompt for NodeJS. Unlike other modules this is a live listening CLI interface. Similar to that of mysql I guess you could say. Currently being used in [Git-Server](https://github.com/qrpike/NodeJS-Git-Server)
 
+Click here to see the [Documented source code](http://qrpike.github.io/NodeJS-CLI-Listener/cli.coffee.html)
+
 ## Installation
 ========
 To install just use NPM:
