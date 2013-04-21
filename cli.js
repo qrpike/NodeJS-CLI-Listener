@@ -41,10 +41,7 @@ CLI = (function(_super) {
     this.resetInput = function() {
       return CLI.prototype.resetInput.apply(_this, arguments);
     };
-    this.write = function(message) {
-      if (message == null) {
-        message = '';
-      }
+    this.write = function(message, command) {
       return CLI.prototype.write.apply(_this, arguments);
     };
     this.listTriggers = function() {
@@ -149,11 +146,8 @@ CLI = (function(_super) {
     return _results;
   };
 
-  CLI.prototype.write = function(message) {
-    if (message == null) {
-      message = '';
-    }
-    return this.cli.write(message);
+  CLI.prototype.write = function(message, command) {
+    return this.cli.write(message, command);
   };
 
   CLI.prototype.resetInput = function() {

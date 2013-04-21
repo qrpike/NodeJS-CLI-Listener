@@ -92,8 +92,8 @@ class CLI extends EventEmitter
 	
 	
 	# Write a message using readline module
-	write: (message = '')=>
-		@cli.write message
+	write: (message,command)=>
+		@cli.write message, command
 	
 	
 	
